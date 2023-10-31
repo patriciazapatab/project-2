@@ -102,16 +102,13 @@ lacrosse = pd.read_excel("./data/lacrosse.xlsx") #reading the original df
 
 final_df = transform.merge_and_transform(dataframes_list,lacrosse)
 
-#visualization
+#visualization - bar plots
 deffense_correlation = visualize.deffense_correlation(final_df)
 attack_correlation = visualize.attack_correlation(final_df)
 correlation_plot = visualize.variables_correlation_visualization(final_df)
 
 rank_bar_plot = visualize.conference_rank_bar_plot(final_df)
-
 fouls_bar_plot = visualize.conference_fouls_bar_plot(final_df)
-
 shots_on_goal_plot = visualize.conference_shots_bar_plot(final_df)
-
 saves_plot = visualize.conference_saves_bar_plot(final_df)
 
